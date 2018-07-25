@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state = {}
+  }
+
   render() {
     return (
       <header>
@@ -13,7 +18,7 @@ class Header extends Component {
         <nav>
           <ul>
             <li className="first">
-              <Link to='/'>Home</Link>
+              {this.props.token ? <Link to='/Dashboard'>Dashboard</Link> : <Link to='/'>Home</Link> }
             </li>
             <li>
               <Link to='/Products'>Products</Link>
