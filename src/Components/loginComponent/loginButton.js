@@ -13,12 +13,8 @@ class LoginButton extends Component {
   render() {
     return (
       <Button
-        raised
-        accent
         href={`${authorizeUrl}?client_id=${clientId}&redirect_uri=${redirectURI}&response_type=${responseType}&scope=${scope}`}
       >
-        {/* <SpotifyIcon /> */}
-        {' '}
         Login with Spotify
       </Button>
     );

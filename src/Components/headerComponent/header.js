@@ -5,6 +5,7 @@ class Header extends Component {
   constructor(props){
     super(props);
     this.state = {}
+    debugger;
   }
 
   render() {
@@ -21,10 +22,16 @@ class Header extends Component {
               {this.props.token ? <Link to='/Dashboard'>Dashboard</Link> : <Link to='/'>Home</Link> }
             </li>
             <li>
-              <Link to='/Products'>Products</Link>
+              <Link to={'/Playlists?token=' + this.props.token}>Playlists</Link>
+            </li>
+            <li>
+              <Link to={'/Party?token=' + this.props.token}>Party</Link>
+            </li>
+            <li>
+              <Link to={'/Player?token=' + this.props.token}>Player</Link>
             </li>
             <li className="last">
-              <Link to='/Contact'>Contact</Link>
+              {this.props.token ? <Link to='/'>Logout</Link> : <Link to='/'>Log In</Link>}
             </li>
           </ul>
         </nav>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import LoginButton from '../loginComponent/loginButton';
+import Location from '../locationComponent/location';
 
 class Home extends Component {
   render() {

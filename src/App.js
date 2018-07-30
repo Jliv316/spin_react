@@ -8,8 +8,9 @@ import {
 import Main from './Main';
 import Header from './Components/headerComponent/header';
 import Footer from './Components/footerComponent/footer';
-import Products from './Components/pages/products';
-import Contact from './Components/pages/contact';
+import Playlists from './Components/pages/playlists';
+import Party from './Components/pages/party';
+import Player from './Components/pages/player';
 import Dashboard from './Components/pages/dashboard';
 import { getQueryParams } from './utils';
 
@@ -39,11 +40,10 @@ class App extends Component {
           {this.isLoggedIn ? <Header token={this.state.token}/> : <Header />}
 
           <Route exact path='/' component={Main} />
-          <Route exact path='/Products' component={Products} />
-          <Route exact path='/Contact' component={Contact} />
+          <Route exact path='/Playlists' component={Playlists} />
+          <Route exact path='/Party' component={Party} />
+          <Route exact path='/Player' component={Player} />
           <Route exact path='/Dashboard' component={Dashboard} />
-
-          <Footer />
 
         </div>
       </Router>

@@ -14,8 +14,24 @@ class Main extends Component {
     return !!this.state.token;
   }
 
+  checkForPlayer() {
+    const { token } = this.state;
+
+    if (window.Spotify !== null) {
+      this.player = new window.Spotify.Player({
+        name: "Matt's Spotify Player",
+        getOAuthToken: cb => { cb(token); },
+      });
+      // this.createEventHandlers();
+
+      // finally, connect!
+      this.player.connect();
+    }
+  }
+
+
   render() {
-    let page = this.props.token ? <Dashboard /> : <Home />; 
+    let page = this.state.token ? <Dashboard token={this.state.token}/> : <Home />; 
     return (
         <div>{page}</div>
     );
