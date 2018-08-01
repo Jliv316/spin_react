@@ -5,7 +5,6 @@ class Header extends Component {
   constructor(props){
     super(props);
     this.state = {}
-    debugger;
   }
 
   render() {
@@ -13,7 +12,7 @@ class Header extends Component {
       <header>
 
         <div className = 'logo'>
-          LOGO
+          ListenApp
         </div>
 
         <nav>

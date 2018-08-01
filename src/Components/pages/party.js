@@ -8,7 +8,6 @@ class Party extends Component {
     super(props);
     const params = getQueryParams();
     this.state = { token: params.token }
-    debugger;
   }
   render() {
     return (
@@ -22,7 +21,6 @@ class Party extends Component {
         </div>
 
         <section className="section section-light">
-          <h2>Section One</h2>
           <p>
             <PartyService token={this.state.token} />
           </p>
@@ -31,7 +29,7 @@ class Party extends Component {
         <div className="pimg2">
           <div className="ptext">
             <span className="border trans">
-              Image Two Text
+              Frank's the man.. :/
             </span>
           </div>
         </div>

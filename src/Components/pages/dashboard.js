@@ -15,8 +15,10 @@ class Dashboard extends Component {
         <div className="pimg1">
           <div className="ptext">
             <span className="border trans">
-              <Location token={this.state.token} />
-              <Logout token={this.state.token} />
+              <div className="Login-buttons">
+                <Location token={this.state.token} />
+                <Logout token={this.state.token} />
+              </div>
               </span>
           </div>
         </div>

@@ -21,7 +21,6 @@ class Playlists extends Component {
         </div>
 
         <section className="section section-light">
-          <h2>Section One</h2>
           <p>
             <Playlist token={this.state.token} />
           </p>
@@ -30,7 +29,7 @@ class Playlists extends Component {
         <div className="pimg2">
           <div className="ptext">
             <span className="border trans">
-              Image Two Text
+              Walk it like I talk it.
             </span>
           </div>
         </div>

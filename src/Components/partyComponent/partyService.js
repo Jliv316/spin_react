@@ -13,7 +13,7 @@ class PartyService extends React.Component {
     })
       .then(response => {
         console.log(response)
-        this.setState({ tracks: response.data })
+        this.setState({ tracks: response.data.tracks })
       })
       .catch(error => console.log(error))
   }
@@ -21,7 +21,7 @@ class PartyService extends React.Component {
   render() {
     const tracks = this.state.tracks.map((track) => (
       <div>
-        <h1>{track}</h1>
+        <h1>{track.name}</h1>
       </div>
     ));
 

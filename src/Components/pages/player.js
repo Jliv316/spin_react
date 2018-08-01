@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Playlist from '../playlistComponent/Playlist';
+import PlayerService from '../playerComponent/playerService';
 import { getQueryParams } from '../../utils';
-import SpotifyPlayer from 'react-spotify-player';
 
 class Player extends Component {
   constructor(props) {
@@ -15,22 +15,8 @@ class Player extends Component {
   }
 
   render() {
-    const size = {
-      width: '100%',
-      height: 1000,
-    };
-    const view = 'list'; // or 'coverart'
-    const theme = 'black'; // or 'white'
     return (
-      <div className="container-fluid">
-        <SpotifyPlayer
-          uri="spotify:album:7oibvoJKJp8KecLeA86yjc"
-          size={size}
-          view={view}
-          theme={theme}
-        />
-
-      </div>
+      <PlayerService token={this.state.token} />
     );
   }
 }
