@@ -29,5 +29,9 @@ spin up react app: $ npm start
 
 ENJOY GEODYNAMIC MUSIC!!
 
+Home Page:
+
 <img width="1419" alt="screen shot 2018-08-22 at 11 33 20 am" src="https://user-images.githubusercontent.com/35744655/44480582-ce878980-a600-11e8-8253-def61c1cc9bb.png">
 
+Player Page:
+<img width="1420" alt="screen shot 2018-08-22 at 11 33 52 am" src="https://user-images.githubusercontent.com/35744655/44480663-0abaea00-a601-11e8-81a6-513c83f562a8.png">
