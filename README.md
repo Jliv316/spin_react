@@ -17,10 +17,14 @@ By tracking mood or taste or environment by through music location data, we can 
 
 How to run in development:
 
-clone down the rails api: $ git clone https://github.com/Jliv316/spin.git
-clone down this repo (react client): $ git clone https://github.com/Jliv316/spin_react.git
+Clone down the following repos:
+
+Rails API: $ git clone https://github.com/Jliv316/spin.git
+
+React.js Client: $ git clone https://github.com/Jliv316/spin_react.git
 
 spin up rails api locally: $ rails s -p 3166 
+
 spin up react app: $ npm start
 
 ENJOY GEODYNAMIC MUSIC!!
